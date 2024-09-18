@@ -19,19 +19,10 @@ public class AmazonTest {
 
     @BeforeMethod
     public void setUp() {
-//        System.setProperty("webdriver.chrome.driver","C:\\driver\\chromedriver-win64\\chromedriver.exe");
-//        driver = new ChromeDriver();
-//        // Maximize the browser window
-//        driver.manage().window().maximize();
-    	 System.setProperty("webdriver.chrome.driver","C:\\driver\\chromedriver-win64\\chromedriver.exe");
-
-         // Initialize ChromeDriver
-       ChromeOptions options=new ChromeOptions();
-       options.addArguments("--start-maximized");
-         WebDriver driver = new ChromeDriver(options);
- System.out.print("ss");
-         // Maximize the browser window
-         driver.manage().window().maximize();
+        System.setProperty("webdriver.chrome.driver","C:\\driver\\chromedriver-win64\\chromedriver.exe");
+        driver = new ChromeDriver();
+        // Maximize the browser window
+        driver.manage().window().maximize();
     }
 
     @Test
